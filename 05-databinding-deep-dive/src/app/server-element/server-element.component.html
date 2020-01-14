@@ -1,0 +1,10 @@
+<div class="card bg-default mb-1">
+  <div class="card-header">{{ element.name }}</div>
+  <div class="card-body">
+    <!-- <p>
+      <strong *ngIf="element.type === 'server'" class="text-danger">{{ element.content }}</strong>
+      <em *ngIf="element.type === 'blueprint'" class="text-primary">{{ element.content }}</em>
+    </p> -->
+    <ng-content></ng-content>
+  </div>
+</div>
