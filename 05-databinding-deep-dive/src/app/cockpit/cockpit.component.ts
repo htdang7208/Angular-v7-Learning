@@ -19,11 +19,18 @@ export class CockpitComponent implements OnInit {
   }
 
   onAddServer(serverName: HTMLInputElement) {
-    this.serverCreated.emit({serverName: serverName.value, serverContent: this.serverContentInput.nativeElement.value});
+    this.serverCreated.emit(
+      {
+        serverName: serverName.value, 
+        serverContent: this.serverContentInput.nativeElement.value
+      });
   }
 
   onAddBlueprint(serverName: HTMLInputElement) {
     this.serverContentInput.nativeElement.value = 'Hi stupid';
-    this.blueprintCreated.emit({serverName: serverName.value, serverContent: this.serverContentInput.nativeElement.value});
+    this.blueprintCreated.emit(
+      {serverName: serverName.value, 
+        serverContent: this.serverContentInput.nativeElement.value
+      });
   }
 }
