@@ -16,7 +16,7 @@ import { ServerResolver } from './servers/server/server-resolver.service';
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },  // localhost:4200/#
     {
-        path: 'users',
+        path: 'users',  //localhost:4200/users
         component: UsersComponent,
         children: [{ path: ':id/:name', component: UserComponent }]
     },
