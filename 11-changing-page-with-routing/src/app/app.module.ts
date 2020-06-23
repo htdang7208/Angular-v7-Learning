@@ -26,12 +26,12 @@ import { ServerResolver } from './servers/server/server-resolver.service';
     AppComponent,
     HomeComponent,
     UsersComponent,
-    ServersComponent,
     UserComponent,
-    EditServerComponent,
+    ServersComponent,
     ServerComponent,
-    PageNotFoundComponent,
-    ErrorPageComponent
+    EditServerComponent,
+    ErrorPageComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     ngOnInit() {
         const secondsCouter = interval(1000);
         this.numbersObsSubscription = secondsCouter.subscribe((n: number) => console.log(n));
-        
+
         const myObservable = Observable.create((observer: Observer<string>) => {
             setTimeout(() => {
                 observer.next('first package');

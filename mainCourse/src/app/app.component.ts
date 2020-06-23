@@ -9,6 +9,6 @@ export class AppComponent {
   loadedFeature = 'recipe';
 
   onNavigation(feature: string) {
-    this.loadedFeature = feature;  
+    this.loadedFeature = feature;
   }
 }
